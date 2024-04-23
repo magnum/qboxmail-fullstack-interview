@@ -25,7 +25,7 @@ const io = new Server(server, {
   },
 });
 
-// set config globally
+// set config globally, to be easily accessible
 app.set("config", config);
 
 // create temporary folder if not exists
@@ -37,34 +37,23 @@ if (!fs.existsSync(app.get("config").tmpFolder)) {
   }
 }
 
-// load logger
-logger(app);
 // load middlewares
+logger(app);
 cors(app);
 
-// crypter/decrypter
-// encdecpwd(app);
-
-// load db connection
-// redisdb(app);
-
-// load websocket connection
+// load websocket routing configuration
 qbws(io, app);
 
-// routes
+// load standard rest routes
 routes(app);
 
 // configure public app to server static files
 app.use(express.static("public"));
 
 let port = process.env.NODE_PORT || config.port;
-server.listen(port, function () {
+server.listen(port, () => {
   let env = process.env.NODE_ENV || "development";
   app.logger.info("=================================================");
   app.logger.info(env + " server started at port " + port);
   app.logger.info("=================================================");
-  if (env !== "development" && _.isFunction(process.send)) {
-    // send ready to PM2
-    process.send("ready");
-  }
 });

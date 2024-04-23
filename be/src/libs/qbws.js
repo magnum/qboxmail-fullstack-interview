@@ -5,8 +5,7 @@ import ctrl_imap from "../controllers/ctrl_imap.js";
 export default function (io, app) {
   // this middleware is executed only one time immediately before the "connection" event
   io.use((socket, next) => {
-    console.log("socket", socket.handshake.query.token);
-
+    // prefilled info for interview excercise
     socket.qboxmail = {
       sessionid: "session-placeholder",
       QBSessionID: "session-placeholder",
@@ -74,7 +73,8 @@ export default function (io, app) {
       });
     });
 
-    socket.on("imap_get_messages_list", imap.get_messages_list); // OK
-    socket.on("imap_get_message", imap.get_message); // OK
+    // actions available via sockets
+    socket.on("imap_get_messages_list", imap.get_messages_list);
+    socket.on("imap_get_message", imap.get_message);
   });
 }

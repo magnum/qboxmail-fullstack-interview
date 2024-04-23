@@ -39,10 +39,6 @@ function getServedPath(appPackageJson) {
 
 let appHtml = resolveApp("public/index.html");
 
-if (process.env.NODE_ENV === "production") {
-  appHtml = resolveApp("public/index_prod.html");
-}
-
 // config after eject: we're in ./config/
 module.exports = {
   dotenv: resolveApp(".env"),

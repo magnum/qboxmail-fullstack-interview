@@ -1,55 +1,20 @@
 "use strict";
-import os from "os";
-import crypto from "crypto";
+
 import QboxImap from "qboxmail-imap";
 import async from "async";
-import axios from "axios";
 import mailparser from "mailparser";
 import _ from "lodash";
-import path from "path";
-import MailComposer from "nodemailer/lib/mail-composer/index.js";
-import nodemailer from "nodemailer";
-import nodemailHtmlToText from "nodemailer-html-to-text";
-import crc from "crc";
-import tnef from "node-tnef";
-import moment from "moment-timezone";
-import * as cheerio from "cheerio";
-import {v1 as uuidv1} from "uuid";
-import he from "he";
-import {convert} from "html-to-text";
 import utf7 from "utf7";
-import JSZip from "jszip";
 import utils from "../helpers/utils.js";
 import config from "../../config.js";
-// import messageParser from "./messageParser.js";
 
-function checkUids(uids) {
-  if (typeof uids === "undefined" || uids === null) return false;
-  if (uids === "*" || uids === "*:*") return true;
-  if (typeof uids === "number") {
-    if (uids <= 0) {
-      return false;
-    }
-    return true;
-  }
-  if (typeof uids === "object") {
-    if (uids.length === 0) {
-      return false;
-    }
-  }
-  for (let i in uids) {
-    if (uids[i] === null || uids[i] === undefined || isNaN(uids[i]) || parseInt(uids[i], 10) <= 0) {
-      return false;
-    }
-  }
-  return true;
-}
-
-export default function (app, socket = null) {
+export default function (app) {
   let imapmodule = {};
-  // const parser = messageParser(app);
 
-  /******************** LOCAL CONN SCHELETON ****************/
+  // assign a function that instantiate an IMAP connection
+  // and execute the request action (do_something).
+  // This is used during the calls that the user does to access
+  // to an imap connection where and when needed.
   imapmodule.local_work = function (data, do_something, callback) {
     if (!data.action) {
       app.logger.error(
@@ -73,10 +38,6 @@ export default function (app, socket = null) {
           let callback_called = false;
 
           conn.once("ready", function () {
-            /*  console.time(
-              `${data && data.connection_data && data.connection_data.user} - ${data.action}`
-            ); */
-
             let client_ip = data.client_ip || null;
             // imapmodule.send_imap_id(conn, client_ip);
             if (data.params.folder) {
@@ -117,17 +78,12 @@ export default function (app, socket = null) {
         },
       ],
       function (err) {
-        /* console.timeEnd(
-          `${data && data.connection_data && data.connection_data.user} - ${data.action}`
-        ); */
         return callback(err, result);
       }
     );
   };
-  /*****************************************************/
 
-  imapmodule.getMessage = function (data, callback) {
-    let saveMessage = false;
+  imapmodule.get_message = function (data, callback) {
     let message = null;
     let rawMessage = null;
     let isHuge = 0;
@@ -246,63 +202,6 @@ export default function (app, socket = null) {
       return callback(null, {message: msg_obj, isHuge: isHuge});
     });
   };
-
-  // imapmodule.updateParentFlags = function (conn, data, callback) {
-  //   if (!conn || conn.state !== "authenticated") {
-  //     app.logger.error(`IMAP connection not available`);
-  //     return callback({err: "IMAP connection not available"});
-  //   }
-
-  //   async.series(
-  //     [
-  //       function (cb) {
-  //         if (!data.msg.headers.hasOwnProperty("parent_uid")) {
-  //           return cb();
-  //         }
-  //         if (data.msg.headers.parent_flag !== "Answered") {
-  //           return cb();
-  //         }
-  //         const params = {
-  //           params: {
-  //             uids: [{folder: data.msg.headers.parent_folder, uid: data.msg.headers.parent_uid}],
-  //             action: true,
-  //             flag: data.msg.headers.parent_flag,
-  //           },
-  //           connection_data: data.imap_data,
-  //           action: "toggle_flags",
-  //           client_ip: data.msg.headers["X-Sender-IP"],
-  //         };
-  //         imapmodule.local_work(params, imapmodule.toggle_flags, function (err) {
-  //           return cb(err);
-  //         });
-  //       },
-  //       function (cb) {
-  //         if (!data.msg.headers.hasOwnProperty("parent_uid")) {
-  //           return cb();
-  //         }
-  //         if (data.msg.headers.parent_flag !== "$forwarded") {
-  //           return cb();
-  //         }
-  //         const params = {
-  //           params: {
-  //             uids: [{folder: data.msg.headers.parent_folder, uid: data.msg.headers.parent_uid}],
-  //             action: true,
-  //             flag: data.msg.headers.parent_flag,
-  //           },
-  //           connection_data: data.imap_data,
-  //           action: "toggle_keywords",
-  //           client_ip: data.msg.headers["X-Sender-IP"],
-  //         };
-  //         imapmodule.local_work(params, imapmodule.toggle_keywords, function (err) {
-  //           return cb(err);
-  //         });
-  //       },
-  //     ],
-  //     function (err) {
-  //       return callback(err);
-  //     }
-  //   );
-  // };
 
   imapmodule.get_message_uids = function (conn, data, callback) {
     if (!conn || conn.state !== "authenticated") {
@@ -641,4 +540,26 @@ export default function (app, socket = null) {
   };
 
   return imapmodule;
+}
+
+function checkUids(uids) {
+  if (typeof uids === "undefined" || uids === null) return false;
+  if (uids === "*" || uids === "*:*") return true;
+  if (typeof uids === "number") {
+    if (uids <= 0) {
+      return false;
+    }
+    return true;
+  }
+  if (typeof uids === "object") {
+    if (uids.length === 0) {
+      return false;
+    }
+  }
+  for (let i in uids) {
+    if (uids[i] === null || uids[i] === undefined || isNaN(uids[i]) || parseInt(uids[i], 10) <= 0) {
+      return false;
+    }
+  }
+  return true;
 }

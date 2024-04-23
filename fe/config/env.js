@@ -90,12 +90,8 @@ function getClientEnvironment(publicUrl) {
   };
 
   // Qboxmail globals definitions
-
   let internalPublicAssets = {
-    production: JSON.stringify("test"),
-    prepro: JSON.stringify("test"),
     development: JSON.stringify("test"),
-    staging: JSON.stringify("test"),
   };
 
   const customDefinitions = {

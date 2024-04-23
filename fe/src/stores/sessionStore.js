@@ -1,43 +1,8 @@
 import {store} from "@risingstack/react-easy-state/dist/es.es5.js";
 import env from "../env.js";
 import {io} from "socket.io-client";
-import * as Sentry from "@sentry/browser";
 
 const socketConnect = function () {
-  // handle imap heartbeat
-  // let heartbeat_counter = 0;
-  // sessionStore.tokenRefreshInterval = setInterval(() => {
-  //   let token = null;
-  //   if (process.env.REACT_APP_MTM === "1") {
-  //     token = window.sessionStorage.getItem("token_mtm");
-  //   } else {
-  //     token = window.localStorage.getItem("token") || window.sessionStorage.getItem("token");
-  //   }
-  //   sessionStore.token = token;
-
-  //   let saveDraftStuckDate = localStorage.getItem("saveDraftStuck");
-
-  //   sessionStore.emit("heartbeat", {
-  //     webmail_version: process.env.QBWEBMAIL_CURRENT_VERSION,
-  //     settings_version: sessionStore.settings.ts,
-  //     validate_session: heartbeat_counter % 3 === 0 ? true : false,
-  //     check_modal_news: heartbeat_counter % 2 === 0 ? true : false,
-  //     saveDraftStuck: saveDraftStuckDate ? true : false,
-  //   });
-
-  //   if (heartbeat_counter % 60 === 0) {
-  //     if (process.env.REACT_APP_MTM === "0") {
-  //       newsStore.init();
-  //     }
-  //   }
-
-  //   if (heartbeat_counter % 3 === 0) {
-  //     sessionStore.checkIfUserBlocked();
-  //     sessionStore.checkExpiredPassword();
-  //   }
-  //   heartbeat_counter++;
-  // }, 10000);
-
   if (sessionStore.socketCallbacks && sessionStore.socketCallbacks.onSocketConnect) {
     sessionStore.socketCallbacks.onSocketConnect();
   }
@@ -63,78 +28,11 @@ const socketDisconnect = function (reason) {
   }
 };
 
-// const socketError = function (msg) {
-//   console.log("ERROR ON SOCKET", msg);
-//   sessionStore.isImapReady = false;
-//   sessionStore.reconnecting = true;
-//   clearInterval(sessionStore.tokenRefreshInterval);
-//   sessionStore.tokenRefreshInterval = null;
-// };
-//
-// const socketReconnect = function () {
-//   console.log("reconnect -> start imap connection");
-//   if (sessionStore.socketCallbacks && sessionStore.socketCallbacks.onSocketReconnect) {
-//     sessionStore.socketCallbacks.onSocketReconnect();
-//   }
-// };
-//
-// const socketReconnectError = function (msg) {
-//   console.log("reconnect_error");
-//   sessionStore.isImapReady = false;
-//   sessionStore.reconnecting = true;
-//   if (sessionStore.socketCallbacks && sessionStore.socketCallbacks.onConnectError) {
-//     sessionStore.socketCallbacks.onConnectError(msg);
-//   }
-// };
-//
-// const socketReconnectFailed = function (msg) {
-//   console.log("reconnect_failed", msg);
-//   sessionStore.isImapReady = false;
-//   sessionStore.reconnecting = true;
-//   if (sessionStore.socketCallbacks && sessionStore.socketCallbacks.onConnectError) {
-//     sessionStore.socketCallbacks.onConnectError(msg);
-//   }
-// };
-
 const socketConnectError = function (msg) {
-  console.log("connect_error 22", msg);
   sessionStore.isImapReady = false;
   sessionStore.reconnecting = true;
   if (sessionStore.socketCallbacks && sessionStore.socketCallbacks.onConnectError) {
-    console.log("calling onConnectError", sessionStore.socketCallbacks.onConnectError);
     sessionStore.socketCallbacks.onConnectError(msg);
-  }
-};
-
-const socketForceDisconnect = function () {
-  sessionStore.isImapReady = false;
-  if (sessionStore.socketCallbacks && sessionStore.socketCallbacks.onForceDisconnect) {
-    sessionStore.socketCallbacks.onForceDisconnect();
-  }
-};
-
-const socketUpdateSettings = function () {
-  if (sessionStore.socketCallbacks && sessionStore.socketCallbacks.onUpdateSettings) {
-    sessionStore.socketCallbacks.onUpdateSettings();
-  }
-};
-
-const socketForceUiReload = function () {
-  window.location.reload(true);
-};
-
-const saveDraftStuckNotification = function () {
-  try {
-    let saveDraftStuckDate = localStorage.getItem("saveDraftStuck");
-
-    if (saveDraftStuckDate) {
-      Sentry.captureMessage(
-        "saveDraftStuck -> " + sessionStore.settings.code + " - " + saveDraftStuckDate
-      );
-      localStorage.removeItem("saveDraftStuck");
-    }
-  } catch (error) {
-    console.log("Error in saveDraftStuck management");
   }
 };
 
@@ -197,55 +95,9 @@ const sessionStore = store({
     }
   },
 
-  init(token, opts = {}, cb) {
-    if (!token) {
-      console.log("can't init store without token");
-      return;
-    }
-    if (Object.keys(opts).length === 0) {
-      console.log("can't init store without data");
-      return;
-    }
-
-    sessionStore.token = token;
-    sessionStore.username = opts.settings.user;
-    sessionStore.settings = opts.settings;
-    sessionStore.datasets = opts.datasets;
-    sessionStore.limits = opts.limits;
-
-    if (process.env.REACT_APP_MTM === "1") {
-      sessionStore.snapshots = opts.snapshots;
-      sessionStore.selectedSnapshot = opts.selectedSnapshot;
-      sessionStore.settings.mail.reading.showThreads = false;
-    }
-
-    sessionStore.canUseCalendar =
-      (opts.settings && opts.settings.general && opts.settings.general.calendar) || false;
-    sessionStore.isSettingsReady = true;
-    sessionStore.isDoingLogout = false;
-    sessionStore.newWebmailVersion = process.env.QBWEBMAIL_CURRENT_VERSION;
-
-    if (cb) {
-      return cb();
-    }
-  },
-
-  setHTMLLanguage() {
-    // Set the correct language on the HTML tag
-    const htmlElement = document.querySelector("html");
-    const lang = sessionStore.settings.general.language;
-
-    if (lang === "gr") {
-      htmlElement.lang = "el";
-    } else {
-      htmlElement.lang = lang;
-    }
-  },
-
   socketInit(callbacks = {}) {
     console.log("socketInit start");
     if (!sessionStore.socketCallbacks) {
-      console.log("callbacks loaded");
       sessionStore.socketCallbacks = callbacks;
     } else {
       console.log("callbacks already present");
@@ -272,35 +124,8 @@ const sessionStore = store({
         },
       });
     }
-    // } else if (environment === "dev_production") {
-    //   let base_url = env.be_url.replace(/\/api$/, "");
 
-    //   sessionStore.socket = io(base_url, {
-    //     path: "/api/socket.io",
-    //     autoconnect: true,
-    //     reconnection: false,
-    //     query: {
-    //       token: sessionStore.token,
-    //     },
-    //   });
-    // } else {
-    //   let ar = window.location.href.split("/");
-    //   let base_url = ar[0] + "//" + ar[2];
-    //   sessionStore.socket = io(base_url, {
-    //     path: env.be_url + "/socket.io",
-    //     autoconnect: true,
-    //     reconnection: false,
-    //     query: {
-    //       token: sessionStore.token,
-    //     },
-    //     transports: ["polling", "websocket"],
-    //     // forceNew: true,
-    //   });
-    // }
-
-    console.log("[sessionStore] Socket loaded");
     sessionStore.addSocketListeners();
-    console.log("[sessionStore] Socket  loaded2 222");
 
     if (sessionStore.socketCallbacks && sessionStore.socketCallbacks.onSocketInit) {
       sessionStore.socketCallbacks.onSocketInit();
@@ -312,18 +137,10 @@ const sessionStore = store({
       sessionStore.socket.removeListener("connect", socketConnect);
       sessionStore.socket.removeListener("disconnect", socketDisconnect);
       sessionStore.socket.removeListener("connect_error", socketConnectError);
-      //
       // sessionStore.socket.removeListener("error", socketError);
       // sessionStore.socket.removeListener("reconnect", socketReconnect);
       // sessionStore.socket.removeListener("reconnect_error", socketReconnectError);
       // sessionStore.socket.removeListener("reconnect_failed", socketReconnectFailed);
-      sessionStore.socket.removeListener("force_disconnect", socketForceDisconnect);
-      sessionStore.socket.removeListener("update_settings", socketUpdateSettings);
-      sessionStore.socket.removeListener("force_ui_reload", socketForceUiReload);
-      sessionStore.socket.removeListener(
-        "save_draft_stuck_notification",
-        saveDraftStuckNotification
-      );
     }
   },
 
@@ -333,6 +150,7 @@ const sessionStore = store({
       console.log("addNewSocketListener: Socket not present");
       return;
     }
+
     let socketIOInternalEvents = [
       "connect",
       //"error",
@@ -364,10 +182,6 @@ const sessionStore = store({
     // sessionStore.addNewSocketListener("reconnect_error", socketReconnectError);
     // sessionStore.addNewSocketListener("reconnect_failed", socketReconnectFailed);
     sessionStore.addNewSocketListener("connect_error", socketConnectError);
-    sessionStore.addNewSocketListener("force_disconnect", socketForceDisconnect);
-    sessionStore.addNewSocketListener("update_settings", socketUpdateSettings);
-    sessionStore.addNewSocketListener("force_ui_reload", socketForceUiReload);
-    sessionStore.addNewSocketListener("save_draft_stuck_notification", saveDraftStuckNotification);
   },
 });
 
