@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-    <g class="nc-icon-wrapper" stroke-width="1" fill="rgba(0, 0, 0, 0.87)" stroke="rgba(0, 0, 0, 0.87)">
-        <polyline fill="none" stroke="rgba(0, 0, 0, 0.87)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="3.5,4.5 8,0.5 12.5,4.5 " />
-        <polyline fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="3.5,11.5 8,15.5 12.5,11.5 " data-color="color-2" />
-    </g>
-</svg>

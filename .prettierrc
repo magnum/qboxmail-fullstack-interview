@@ -6,5 +6,5 @@
   "bracketSpacing": false,
   "trailingComma": "es5",
   "arrowParens": "always",
-  "spaceBeforeFunctionParen": false 	
+  "spaceBeforeFunctionParen": false
 }
