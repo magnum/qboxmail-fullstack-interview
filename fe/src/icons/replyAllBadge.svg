@@ -1,0 +1,7 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+  <g stroke-width="1" fill="var(--color-icon)" stroke="var(--color-icon)">
+    <polyline points="3.69 4.5 11.5 4.5 11.5 11.5" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="7 8 3.5 4.5 7 1" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="4 8 0.5 4.5 4 1" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

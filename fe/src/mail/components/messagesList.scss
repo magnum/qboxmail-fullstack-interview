@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  border-right: 1px solid var(--bg-d5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--accent);
+  background-color: var(--bg);
+  font-size: var(--font-base);
+  font-weight: var(--semi-bold);
+  padding: 0.5rem 1rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-bottom: 1px solid var(--bg-d5);
+
+  &:hover {
+    background: var(--accent-l35);
+    cursor: pointer;
+  }
+}
+
+.subject {
+  font-weight: var(--semi-bold);
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: var(--font-xl);
+  margin: 0 0 0.5rem 0;
+}
+
+.preview {
+  font-size: var(--font-sm);
+  color: var(--text-a60);
+}

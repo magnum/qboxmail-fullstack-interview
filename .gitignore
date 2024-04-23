@@ -1,0 +1,13 @@
+be/node_modules
+be/db-data
+be/qbservice/__pycache__
+be/logs/.audit.json
+be/tools/indexer/node_modules
+fe/node_modules
+fe/build
+.DS_Store
+.vscode/settings.json
+/.project
+*sublime-project
+webmail.sublime-workspace
+fe/webpackperfs

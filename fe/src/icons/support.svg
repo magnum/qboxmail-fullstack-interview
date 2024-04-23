@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16">
+    <g stroke-width="1" stroke-linejoin="round" fill="none" stroke="#212121" stroke-linecap="round"
+        class="nc-icon-wrapper">
+        <circle cx="8" cy="8" r="7.5"></circle>
+        <circle cx="8.003" cy="12" r="1" stroke="none" fill="#212121"></circle>
+        <path d="M6.5,3.577c.953-.86,3.018-.845,3.423.635C10.453,6.134,8,6.142,8,9" stroke="#212121"></path>
+    </g>
+</svg>

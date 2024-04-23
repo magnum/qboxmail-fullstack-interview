@@ -1,0 +1,53 @@
+@import "../css/_mixins.scss";
+
+.container {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 20%;
+  /* bring your own prefixes */
+  transform: translate(-13%, -50%);
+
+  @include media-sm {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.title {
+  /* Browser non supportato: */
+  font-size: 48px;
+  font-weight: 400;
+  color: #2b2b2b;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.browser {
+  display: inline-block;
+  width: 50%;
+
+  @include media-sm {
+    width: 25%;
+  }
+
+  img {
+    width: 100%;
+    max-width: 96px;
+    height: auto;
+  }
+
+  a {
+    margin-top: 16px;
+    display: block;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

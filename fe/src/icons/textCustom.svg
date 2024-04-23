@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="textCustom" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="#26C6DA" fill-rule="nonzero" points="1 1 1 6.25 1.875 6.25 3.625 3.625 6.25 3.625 6.25 12.375 3.625 14.125 3.625 15 12.375 15 12.375 14.125 9.75 12.375 9.75 3.625 12.375 3.625 14.125 6.25 15 6.25 15 1"></polygon>
+    </g>
+</svg>

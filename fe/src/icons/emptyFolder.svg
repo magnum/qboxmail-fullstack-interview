@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+  <path
+    d="m86.1,621c-1.5,0-2.7-1.2-2.7-2.7v-290c0-1.5,1.2-2.7,2.7-2.7h47c.4,0,.7-.3.7-.7v-28.5c0-4.3,3.4-7.7,7.7-7.7h112.3c4.3,0,7.7,3.5,7.7,7.7v30.2c0,.4.3.7.7.7h291.7c1.5,0,2.7,1.2,2.7,2.7v288.4c0,1.5-1.2,2.7-2.7,2.7H86.1v-.1h0Z"
+    fill="var(--accent-l25)" stroke="#333" stroke-miterlimit="10" stroke-width="2" />
+  <g>
+    <path
+      d="m328.95,402.15l162.62-50.61c1.07-.33,1.64-1.41,1.31-2.48l-34.13-109.95c-.31-.87-.98-1.39-1.88-1.38l-.6.07-162.62,50.61c-.48.16-.94.52-1.19.95s-.27,1.04-.11,1.53l34.23,109.93c.31.87.98,1.39,1.88,1.38.11.09.31.06.5-.06h0Z"
+      fill="#fff" stroke-width="0" />
+    <g>
+      <g>
+        <path d="m487.09,351.89l4.17-1.32c.6-.07.83-.61.76-1.2h0l-1.81-5.72" fill="none"
+          stroke="var(--accent)" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+        <path
+          d="m486.67,332.2l-28.89-92.76c-.16-.48-.71-.82-1.29-.65l-162.62,50.61c-.48.16-.82.71-.65,1.29l34.13,109.95c.16.48.71.82,1.29.65l152.62-47.56"
+          fill="none" stroke="var(--accent)" stroke-dasharray="0 0 12.03 12.03"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+      </g>
+      <g>
+        <line x1="447.22" y1="254.24" x2="443.91" y2="259.29" fill="none" stroke="var(--accent)"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+        <path d="m436.96,269.92l-39.71,60.32c-.6.88-1.66,1.21-2.72.84l-89.21-36.24" fill="none"
+          stroke="var(--accent)" stroke-dasharray="0 0 12.71 12.71" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="4" />
+        <line x1="299.37" y1="292.35" x2="293.86" y2="290.11" fill="none" stroke="var(--accent)"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+      </g>
+    </g>
+  </g>
+  <path
+    d="m86.1,621c-1.4,0-2.6-1.1-2.7-2.5v-257c0-1.4,1.2-2.6,2.7-2.5h0l467.5,1.5c1.4-.1,2.6,1.1,2.7,2.5h0v255.5c-.1,1.4-1.3,2.5-2.7,2.5H86.1Z"
+    fill="var(--accent-l35)" stroke="#333" stroke-miterlimit="10" stroke-width="2" />
+  <g>
+    <line x1="535.43" y1="222.88" x2="490.7" y2="240.06" fill="none" stroke="var(--accent)"
+      stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" />
+    <line x1="506.89" y1="183.61" x2="476.74" y2="220.85" fill="none" stroke="var(--accent)"
+      stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" />
+    <line x1="462.53" y1="163.87" x2="455.04" y2="211.2" fill="none" stroke="var(--accent)"
+      stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" />
+    <line x1="414.25" y1="168.95" x2="431.43" y2="213.69" fill="none" stroke="var(--accent)"
+      stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" />
+    <line x1="374.97" y1="197.5" x2="412.22" y2="227.65" fill="none" stroke="var(--accent)"
+      stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" />
+    <line x1="540.52" y1="271.16" x2="493.18" y2="263.67" fill="none" stroke="var(--accent)"
+      stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" />
+  </g>
+</svg>

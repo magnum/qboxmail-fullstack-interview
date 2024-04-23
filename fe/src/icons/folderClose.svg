@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path
+    d="m7.53,1.97H1.93c-.26,0-.47.21-.47.47v11.14c0,.26.21.47.47.47h12.15c.26,0,.47-.21.47-.47V4.46c0-.26-.21-.47-.47-.47h-6.08v-1.57c0-.26-.21-.47-.47-.47h0Z"
+    fill="none" stroke="var(--color-icon)" stroke-miterlimit="10" stroke-width=".9" />
+  <line x1="5.21" y1="9" x2="10.81" y2="9" fill="none" stroke="var(--accent)" stroke-linecap="round"
+    stroke-miterlimit="10" />
+</svg>

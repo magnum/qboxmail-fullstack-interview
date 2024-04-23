@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Print Message</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        width: 100%;
+      }
+      body {
+        max-width: 800px;
+        font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        color: #2b2b2b;
+        font-weight: 400;
+        padding: 16px 0;
+        margin: 0 auto;
+        overscroll-behavior: contain;
+      }
+      @media print {
+        body {
+          -webkit-print-color-adjust: exact; /* For Chrome */
+          color-adjust: exact; /* For Firefox */
+        }
+
+        .qboxmailCssClass div.WordSection1 {
+          page: inherit !important; /* Reset outlook style to avoid blank spaces in print */
+        }
+      }
+      .header {
+        margin: 0 0 32px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .header hr {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ebebeb;
+      }
+
+      .header .subject {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.25;
+        color: #2b2b2b;
+        margin: 0 0 2px 0;
+      }
+
+      .header .date {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.25;
+        color: #a6a6a6;
+      }
+
+      .header .from,
+      .header .to,
+      .header .cc,
+      .header .bcc {
+        font-size: 14px;
+        display: flex;
+        margin: 0 0 4px 0;
+      }
+
+      .header .from {
+        margin: 16px 0 4px 0;
+      }
+
+      .header .from > div:first-of-type,
+      .header .to > div:first-of-type,
+      .header .cc > div:first-of-type,
+      .header .bcc > div:first-of-type {
+        width: 48px;
+        font-weight: 600;
+        color: #a6a6a6;
+      }
+
+      .qboxmailCssClass blockquote {
+        margin-block-start: 1rem !important;
+        margin-block-end: 1rem !important;
+        margin-inline-start: 0 !important;
+        margin-inline-end: 0 !important;
+        padding: 0 0 0 1rem !important;
+        border-left: 1px solid #ebebeb;
+      }
+      .qboxmailCssClass p {
+        margin: 0;
+      }
+
+      .qboxmailCssClass img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .qboxmailAttachmentsCssClass {
+        border-top: 1px solid #ebebeb;
+        padding: 1rem 0;
+        margin: 1rem 0 0 0;
+      }
+
+      .qboxmailAttachmentsCssClass .attachment {
+        max-width: 100%;
+        height: 2rem;
+        font-size: 14px;
+        line-height: 2rem;
+      }
+
+      .qboxmailAttachmentsCssClass .attachment_name {
+        margin: 0 0.5rem 0 0.25rem;
+      }
+
+      .qboxmailAttachmentsCssClass .attachment_size {
+        color: #a6a6a6;
+      }
+    </style>
+    _STYLE_
+  </head>
+  <body>
+    <div class="header">
+      <hr />
+      _SUBJECT_ _DATE_ _FROM_ _TO_ _CC_ _BCC_
+      <hr />
+    </div>
+    <div class="qboxmailCssClass">_BODY_</div>
+    <div class="qboxmailAttachmentsCssClass">_ATTACHMENTS_</div>
+  </body>
+  <script type="text/javascript">
+    // <![CDATA[
+    document.body.onload = function () {
+      document.body.offsetHeight;
+      window.print();
+    };
+    // ]]>
+  </script>
+</html>

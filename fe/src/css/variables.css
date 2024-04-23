@@ -1,0 +1,138 @@
+:root {
+  /* === viewprt === */
+  --fullVh: var(--vh, 1vh);
+  --maxWidthImg: var(--maxWidthImg, 1px);
+
+  /* === z-index == */
+  --z-index-0: 0;
+  --z-index-1: 100;
+  --z-index-2: 200;
+  --z-index-3: 300;
+  --z-index-4: 400;
+  --z-index-5: 500;
+  --z-index-6: 600;
+  --z-index-7: 700;
+  --z-index-8: 800;
+  --z-index-9: 900;
+  --z-index-10: 1000;
+  --z-index-20: 2000;
+  --z-index-30: 3000;
+  --z-index-40: 4000;
+  --z-index-90: 9000;
+  --z-index-top: 9900;
+  --z-index-toasts: 9999;
+
+  /* === typography === */
+  --font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  --font-family-vianova: "Roboto", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  --font-family-os: Helvetica, Arial, sans-serif;
+
+  /* font-weight */
+  --light: 300;
+  --regular: 400;
+  --semi-bold: 600;
+  --bold: 700;
+
+  /* font-size | base size = 16px */
+  --font-double: 2rem;
+  --font-xxl: 1.5rem;
+  --font-xl: 1.25rem;
+  --font-lg: 1.125rem;
+  --font-base: 1rem;
+  --font-sm: 0.875rem;
+  --font-xs: 0.75rem;
+  --font-xxs: 0.625rem;
+  --font-half: 0.5rem;
+
+  /* === colors === */
+  --white: #ffffff;
+  --white-rgb: 255, 255, 255; /* use in rgba function */
+  --black: #000000;
+
+  /* background */
+  --bg-body: var(--white);
+  --bg: #f9f9f9;
+  --bg-d3: #ededed;
+  --bg-d5: #e8e8e8;
+  --bg-d10: #dbdbdb;
+  --bg-d15: #cfcfcf;
+  --bg-active: var(--accent-l35);
+  --bg-hover: var(--bg-d5);
+  --bg-hover-d: var(--bg-d10);
+  --bg-start: rgba(245, 245, 245, 0); /* to use in animation */
+  --bg-end: rgba(245, 245, 245, 1); /* to use in animation */
+
+  /* text */
+  --text: rgba(0, 0, 0, 0.87);
+  --text-a60: rgba(0, 0, 0, 0.6);
+  --text-a40: rgba(0, 0, 0, 0.4);
+  --mail-text: #333333; /* To fix text readability if background black */
+  --link: var(--accent);
+  --link-hover: var(--accent-d10);
+
+  /* accent */
+  --accent: #2c97ff;
+  --accent-d10: #007ef8;
+  --accent-d30: #004a92;
+  --accent-l35: #deefff;
+  --accent-l25: #c4e3ff;
+  --accent-l15: #a9daff;
+  --accent-rgb: 44, 151, 255; /* use in rgba function */
+
+  /* status */
+  --green: #29c369;
+  --green-d10: #209952;
+  --green-d30: #0e4525;
+  --green-l35: #b0eeca;
+
+  --yellow: #fabb05;
+  --yellow-d30: #644b02;
+  --yellow-l35: #fdebb4;
+
+  --red: #e45548;
+  --red-d10: #d92f20;
+
+  /* other */
+  --cyan: #26c6da;
+  --indigo: #3f51b5;
+  --lime: #c0ca33;
+  --orange: #f5a623;
+  --pink: #ec407a;
+  --purple: #ab47bc;
+
+  /* attachment */
+  --attach: var(--text-a40);
+  --doc-attach: #2b579a;
+  --jpg-attach: #ffee58;
+  --pdf-attach: #ff7c00;
+  --ppt-attach: #d24726;
+  --xls-attach: #217346;
+
+  /* input */
+  --input-bg: #ffffff;
+  --input-border: var(--text-a40);
+  --input-border-hover: var(--text);
+
+  /*--overlay: rgba(0, 0, 0, 0.4);*/
+  --overlay-start: rgba(255, 255, 255, 0);
+  --overlay-end: rgba(255, 255, 255, 0.8);
+  --blur-start: blur(0px);
+  --blur-end: blur(2px);
+
+  /* shadow */
+  --shadow-dp4-nav: 0 2px 2px 0 rgba(0, 0, 0, 0.13), 0 0 0 0 rgba(0, 0, 0, 0.11);
+  --shadow-dp4: 0 1px 3px 0 rgba(0, 0, 0, 0.13), 0 0 0 0 rgba(0, 0, 0, 0.11);
+  --shadow-dp8: 0 3px 7px 0 rgba(0, 0, 0, 0.13), 0 0 1px 0 rgba(0, 0, 0, 0.11);
+  --shadow-dp16: 0 6px 14px 0 rgba(0, 0, 0, 0.13), 0 1px 3px 0 rgba(0, 0, 0, 0.11);
+  --shadow-dp64: 0 25px 57px 0 rgba(0, 0, 0, 0.22), 0 4px 14px 0 rgba(0, 0, 0, 0.18);
+
+  /* icon */
+  --color-icon: var(--text);
+  --accent-icon: var(--accent);
+  --accent-light-icon: var(--accent-l35);
+
+  /* border radius */
+  --radius-2: 0.125rem;
+  --radius-4: 0.25rem;
+  --radius-8: 0.5rem;
+}

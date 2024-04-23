@@ -1,0 +1,10 @@
+{
+  "short_name": "Webmail",
+  "name": "Webmail",
+  "start_url": ".",
+  "scope": "/",
+  "display": "fullscreen",
+  "theme_color": "#2c97ff",
+  "background_color": "#2c97ff",
+  "orientation": "portrait"
+}

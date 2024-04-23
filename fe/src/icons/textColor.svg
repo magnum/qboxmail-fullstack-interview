@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <g class="nc-icon-wrapper" stroke-width="1" fill="var(--color-icon)" stroke="var(--color-icon)">
+    <rect id="color-drop" x="0.5" y="12.5" width="15" height="3" fill="none" stroke-linecap="round" stroke-linejoin="round" data-color="color-2"/> 
+    <polyline points="11.5 9.5 8.5 0.5 7.5 0.5 4.5 9.5" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="3.5" y1="9.5" x2="6.5" y2="9.5" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="9.5" y1="9.5" x2="12.5" y2="9.5" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="5.833" y1="5.5" x2="10.167" y2="5.5" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

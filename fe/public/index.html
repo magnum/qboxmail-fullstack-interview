@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.json" />
+
+    <!-- iOS icons -->
+
+    <!-- favicons -->
+    
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/webmail_assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> -->
+
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2c97ff" />
+    <meta name="msapplication-TileColor" content="#2c97ff" />
+    <meta name="theme-color" content="#2c97ff" /> -->
+    <meta name="theme-color" content="#000000" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,600,600i,700"
+      rel="stylesheet"
+    />
+
+    <title></title>
+
+    <style>
+      html,
+      body {
+        overflow-y: hidden;
+      }
+
+      body {
+        position: relative;
+        font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        color: #2b2b2b;
+        font-weight: 400;
+        margin: 0;
+        background: #f5f5f5;
+      }
+
+      /* These styles stay here because this way the update banner is not visible before the
+      big styles of the rest of the app are received and calculated */
+
+      #ie-fallback,
+      #os-fallback,
+      .qboxupdate-title.qboxupdate-it,
+      .qboxupdate-title.qboxupdate-en,
+      .qboxupdate-subtitle.qboxupdate-it,
+      .qboxupdate-subtitle.qboxupdate-en {
+        display: none;
+      }
+
+      .qboxupdate-container {
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 20%;
+        /* bring your own prefixes */
+        transform: translate(-13%, -50%);
+      }
+
+      .qboxupdate-title {
+        /* Browser non supportato: */
+        font-size: 48px;
+        font-weight: 400;
+        color: #000000;
+        margin-bottom: 24px;
+      }
+
+      .qboxupdate-subtitle {
+        font-size: 20px;
+        margin-bottom: 50px;
+      }
+
+      .qboxupdate-browser {
+        display: inline-block;
+        width: 49%;
+      }
+
+      .qboxupdate-browser img {
+        width: 100%;
+        max-width: 96px;
+        height: auto;
+      }
+
+      .qboxupdate-browser a {
+        margin-top: 16px;
+        display: block;
+      }
+
+      .browser a:hover {
+        cursor: pointer;
+      }
+
+      @media (min-width: 768px) {
+        .qboxupdate-browser {
+          width: 24%;
+        }
+
+        .qboxupdate-container {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    </style>
+  </head>
+
+  <body id="body">
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+
+    <div id="ie-fallback">
+      <div class="qboxupdate-container">
+        <h1 class="qboxupdate-title qboxupdate-it">Browser non supportato</h1>
+        <h1 class="qboxupdate-title qboxupdate-en">This browser is not supported</h1>
+        <div class="qboxupdate-subtitle qboxupdate-it">
+          Sfortunatamento il tuo browser non può sfruttare le più recenti tecnologie.<br />
+          Usa la versione aggiornata di uno dei seguenti browser:
+        </div>
+        <div class="qboxupdate-subtitle qboxupdate-en">
+          Your browser can't take advantages of the recent and safer technologies.<br />
+          Use the updated version of one of these browsers:
+        </div>
+        <div class="qboxupdate-browsers">
+          <div class="qboxupdate-browser">
+            <img src="/chrome_logo.png" alt="chrome logo" />
+            <a href="https://www.google.com/chrome/" target="_blank" rel="noopener noreferrer">
+              Chrome
+            </a>
+          </div>
+          <div class="qboxupdate-browser">
+            <img src="/firefox_logo.png" alt="firefox logo" />
+            <a
+              href="https://www.mozilla.org/en-US/firefox/new/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Firefox
+            </a>
+          </div>
+          <div class="qboxupdate-browser">
+            <img src="/safari_logo.png" alt="safari logo" />
+            <a href="https://www.apple.com/lae/safari/" target="_blank" rel="noopener noreferrer">
+              Safari
+            </a>
+          </div>
+          <div class="qboxupdate-browser">
+            <img src="/edge_logo.png" alt="edge logo" />
+            <a
+              href="https://www.microsoft.com/en-us/windows/microsoft-edge"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Edge
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="os-fallback">
+      <div class="qboxupdate-container">
+        <h1 class="qboxupdate-title qboxupdate-it">Versione OS non supportata</h1>
+        <h1 class="qboxupdate-title qboxupdate-en">This OS version is not supported</h1>
+        <div class="qboxupdate-subtitle qboxupdate-it">
+          Sfortunatamento il tuo sistema operativo non può sfruttare le più recenti tecnologie.
+          <br />
+          Usa una versione più aggiornata.
+        </div>
+        <div class="qboxupdate-subtitle qboxupdate-en">
+          Your OS version can't take advantages of the recent and safer technologies. <br />
+          Use an updated version.
+        </div>
+      </div>
+    </div>
+
+    <div id="root"></div>
+
+    <object id="object-download" data="" width="100%" height="100%" style="display: none">
+      <iframe id="iframe-download" src="" width="100%" height="100%" style="border: none">
+        <p>Your browser does not support inline render.</p>
+      </iframe>
+    </object>
+
+    <script>
+      function detectIE() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+
+        if (msie > 0) {
+          return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)), 10);
+        }
+
+        var trident = ua.indexOf("Trident/");
+        if (trident > 0) {
+          var rv = ua.indexOf("rv:");
+          return parseInt(ua.substring(rv + 3, ua.indexOf(".", rv)), 10);
+        }
+        return false;
+      }
+
+      function detectOS() {
+        var OSName = "Unknown";
+        if (window.navigator.userAgent.indexOf("Windows NT 10.0") != -1) OSName = "Windows 10";
+        if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSName = "Windows 8";
+        if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSName = "Windows 7";
+        if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSName = "Windows Vista";
+        if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSName = "Windows XP";
+        if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSName = "Windows 2000";
+        if (window.navigator.userAgent.indexOf("Mac") != -1) OSName = "Mac/iOS";
+        if (window.navigator.userAgent.indexOf("X11") != -1) OSName = "UNIX";
+        if (window.navigator.userAgent.indexOf("Linux") != -1) OSName = "Linux";
+        return OSName;
+      }
+
+      if (detectIE()) {
+        console.log("IE from index.html");
+
+        let lang = navigator.userLanguage || navigator.Systemlanguage;
+        console.log("IE from index.html - 2", lang);
+
+        if (lang === "it-IT") {
+          document.querySelector(".qboxupdate-title.qboxupdate-it").style.display = "block";
+          document.querySelector(".qboxupdate-subtitle.qboxupdate-it").style.display = "block";
+        } else {
+          document.querySelector(".qboxupdate-title.qboxupdate-en").style.display = "block";
+          document.querySelector(".qboxupdate-subtitle.qboxupdate-en").style.display = "block";
+        }
+        document.getElementById("ie-fallback").style.display = "block";
+      } else {
+        document.getElementById("ie-fallback").remove();
+      }
+    </script>
+    <script src="/bundle.js"></script>
+  </body>
+</html>

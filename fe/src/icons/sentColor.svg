@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1"
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <line x1="7.63" y1="11.85" x2="4.5" y2="15.5" fill="none" stroke="var(--accent-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="4.5 9.5 12.5 15.5 15.5 .5 .5 6.5 2.5 8" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="4.5 15.5 4.5 9.5 9 6.5" fill="none" stroke="var(--accent-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

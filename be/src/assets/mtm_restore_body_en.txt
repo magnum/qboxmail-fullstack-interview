@@ -1,0 +1,13 @@
+Hello {{NOME_WHMCS}},
+the user **{{EMAIL_UTENTE}}** has logged into the Mail Time Machine and requested the restoration of his mailbox with the **{{DATA_BACKUP}}** backup.
+With this operation we will restore all the messages present in the indicated backup, without deleting any messages that have been received or sent from the mailbox in the meantime.
+The restore operation has a cost of € 50.00 + VAT.
+
+Do you confirm the restore operation?
+
+Backups are kept on our systems for 15 days. After this date it will not be possible to restore the contents of the mailbox.
+If you have a monthly plan you will find the 'restore backup' item directly in the next proforma invoice.
+If you have an annual plan, you will receive the recovery proforma invoice in the next few hours.
+For more information on Mail Time Machine and Backup please read the Documentation.
+
+Qboxmail Team

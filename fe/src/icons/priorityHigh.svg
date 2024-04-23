@@ -1,0 +1,14 @@
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g>
+    <circle cx="8" cy="14" r="1" fill="var(--red-d10)"/>
+    <line x1="8" y1="1.5" x2="8" y2="10.5" fill="none" stroke="var(--red-d10)" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <circle cx="12" cy="14" r="1" fill="var(--red-d10)"/>
+    <line x1="12" y1="1.5" x2="12" y2="10.5" fill="none" stroke="var(--red-d10)" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <circle cx="4" cy="14" r="1" fill="var(--red-d10)"/>
+    <line x1="4" y1="1.5" x2="4" y2="10.5" fill="none" stroke="var(--red-d10)" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

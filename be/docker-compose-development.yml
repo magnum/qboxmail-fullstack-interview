@@ -1,0 +1,20 @@
+version: "3.3"
+services:
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+  webmail:
+    build: .
+    volumes:
+      - ".:/webmail"
+      - "/webmail/node_modules"
+    ports:
+      - "5000:5000"
+    extra_hosts:
+      - "webmail-sogo.qboxmail.com:10.96.3.98"
+      - "webmail-sogo.emailvlt.net:10.66.4.235"
+      - "doveadm.emailvlt.net:10.66.4.234"
+    environment:
+      - NODE_ENV=development
+    command: npx nodemon -w src app.js

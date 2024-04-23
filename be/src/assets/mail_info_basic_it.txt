@@ -1,0 +1,13 @@
+Buongiorno {{NOME_WHMCS}},
+l'utente {{EMAIL_UTENTE}} con piano Basic ha dimostrato interesse per i servizi aggiuntivi Qboxmail presenti nei piani superiori e attende di essere ricontattato.
+Questo rappresenta un'opportunità per aumentare il Tuo margine di guadagno.
+Se ancora non conosci le funzionalità dei piani Professional e Enterprise a questo link è possibile scaricare materiali informativi.
+
+https://www.qboxmail.it/download/kit_piano_professional.zip
+
+Qui è possibile prendere visione dei prezzi per casella che verranno applicati all'utente.
+
+https://panel.qboxmail.com/prices
+
+
+Team Qboxmail

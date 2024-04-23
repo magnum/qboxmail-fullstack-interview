@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <g class="nc-icon-wrapper" stroke-width="1" fill="var(--color-icon)" stroke="var(--color-icon)">
+    <path fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M15.14,2.86L13,5 l-2-2l2.14-2.14C12.639,0.633,12.086,0.5,11.5,0.5c-2.209,0-4,1.791-4,4c0,0.552,0.112,1.078,0.314,1.557L0.5,11.5l4,4l5.443-7.314 C10.422,8.388,10.948,8.5,11.5,8.5c2.209,0,4-1.791,4-4C15.5,3.914,15.367,3.361,15.14,2.86z"/>
+  </g>
+</svg>

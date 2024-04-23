@@ -1,0 +1,13 @@
+Buongiorno {{NOME_WHMCS}},
+l'utente **{{EMAIL_UTENTE}}** ha eseguito l'accesso alla Mail Time Machine e ha richiesto il ripristino della sua casella con il backup del **{{DATA_BACKUP}}**.
+Con questa operazione andremo a ripristinare tutti i messaggi presenti nel backup indicato, senza eliminare nessun messaggio che nel frattempo è stato ricevuto o inviato dalla casella email.
+L'operazione di ripristino ha un costo di €50.00+IVA.
+
+Confermi l'operazione di ripristino?
+
+I backup vengono mantenuti nei nostri sistemi per 15 giorni. Oltre tale data non sarà possibile ripristinare il contenuto della casella email.
+Se hai un piano mensile troverai la voce 'ripristino backup' direttamente nel prossimo documento proforma.
+Se hai un piano annuale riceverai il documento proforma relativo al ripristino nelle prossime ore.
+Per ulteriori informazioni su Mail Time Machine e Backup ti invitiamo a leggere la Documentazione.
+
+Team Qboxmail

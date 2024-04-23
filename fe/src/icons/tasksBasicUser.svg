@@ -1,0 +1,247 @@
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 368 331">
+  <defs>
+    <linearGradient id="Sfumatura_senza_nome" data-name="Sfumatura senza nome" x1="-465.23" y1="491.52" x2="-465.23" y2="490.52" gradientTransform="matrix(368, 0, 0, -331, 171389, 162692)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0" />
+      <stop offset="0" stop-color="#fff" stop-opacity="0.29" />
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0.49" />
+      <stop offset="0.77" stop-color="#fff" stop-opacity="0.68" />
+      <stop offset="1" stop-color="#fff" />
+    </linearGradient>
+  </defs>
+  <g id="Artboard">
+    <g id="Group">
+      <g id="Group-7">
+        <g id="task-_-big" data-name="task-/-big">
+          <g id="Group-2" data-name="Group">
+            <g id="Oval">
+              <circle cx="25" cy="222" r="9.5" fill="#fff" stroke="#2b2b2b" />
+            </g>
+          </g>
+          <g id="Task-title" style="isolation: isolate">
+            <text transform="translate(44 226)" font-size="14" fill="#333" font-family="SourceSansPro-Regular, Source Sans Pro" style="isolation: isolate">
+              P
+              <tspan x="7.92" y="0" letter-spacing="-0.01em">r</tspan>
+              <tspan x="12.64" y="0">e</tspan>
+              <tspan x="19.59" y="0" letter-spacing="-0.01em">p</tspan>
+              <tspan x="27.16" y="0">a</tspan>
+              <tspan x="34.22" y="0" letter-spacing="-0.01em">r</tspan>
+              <tspan x="38.93" y="0">e d</tspan>
+              <tspan x="56.45" y="0" letter-spacing="-0.02em">r</tspan>
+              <tspan x="60.97" y="0" letter-spacing="0em">aft p</tspan>
+              <tspan x="86.91" y="0" letter-spacing="-0.01em">r</tspan>
+              <tspan x="91.63" y="0">oje</tspan>
+              <tspan x="109.62" y="0" letter-spacing="-0.01em">c</tspan>
+              <tspan x="115.86" y="0">t p</tspan>
+              <tspan x="131.16" y="0" letter-spacing="-0.01em">r</tspan>
+              <tspan x="135.88" y="0">esen</tspan>
+              <tspan x="163.29" y="0" letter-spacing="-0.02em">t</tspan>
+              <tspan x="167.73" y="0" letter-spacing="-0.01em">a</tspan>
+              <tspan x="174.59" y="0">tion</tspan>
+            </text>
+          </g>
+          <g id="circleFill">
+            <circle id="Oval-2" data-name="Oval" cx="341" cy="222" r="5" fill="#26c6da" />
+          </g>
+          <rect id="Rectangle" x="8" y="256" width="350" height="1" fill="#e8e8e8" />
+        </g>
+        <g id="Group-3" data-name="Group">
+          <g id="label-_-notes" data-name="label-/-notes">
+            <g id="note" style="isolation: isolate">
+              <text transform="translate(48 244)" font-size="12" fill="#919191" font-family="SourceSansPro-Regular, Source Sans Pro" style="isolation: isolate">
+                <tspan letter-spacing="-0.02em">F</tspan>
+                <tspan x="5.69" y="0" letter-spacing="-0.01em">r</tspan>
+                <tspan x="9.73" y="0">om fi</tspan>
+                <tspan x="35.04" y="0" letter-spacing="0em">r</tspan>
+                <tspan x="39.16" y="0" letter-spacing="-0.02em">s</tspan>
+                <tspan x="43.94" y="0" letter-spacing="0em">t b</tspan>
+                <tspan x="57.04" y="0" letter-spacing="-0.02em">r</tspan>
+                <tspan x="60.91" y="0">ain</tspan>
+                <tspan x="76.48" y="0" letter-spacing="-0.02em">s</tspan>
+                <tspan x="81.26" y="0" letter-spacing="-0.01em">t</tspan>
+                <tspan x="85.15" y="0">orming </tspan>
+                <tspan x="123.73" y="0" letter-spacing="-0.01em">t</tspan>
+                <tspan x="127.62" y="0">o p</tspan>
+                <tspan x="143.18" y="0" letter-spacing="-0.01em">r</tspan>
+                <tspan x="147.23" y="0">esent </tspan>
+                <tspan x="177.18" y="0" letter-spacing="-0.02em">s</tspan>
+                <tspan x="181.97" y="0" letter-spacing="-0.02em">t</tspan>
+                <tspan x="185.77" y="0" letter-spacing="-0.01em">at</tspan>
+                <tspan x="195.54" y="0" letter-spacing="0em">e</tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="task-_-big-2" data-name="task-/-big">
+        <g id="Group-4" data-name="Group">
+          <g id="Oval-3" data-name="Oval">
+            <circle cx="26" cy="114" r="9.5" fill="#fff" stroke="#2b2b2b" />
+          </g>
+        </g>
+        <g id="Task-title-2" data-name="Task-title" style="isolation: isolate">
+          <text transform="translate(45 118)" font-size="14" fill="#333" font-family="SourceSansPro-Regular, Source Sans Pro" style="isolation: isolate">
+            Call
+            <tspan x="24.99" y="0" letter-spacing="-0.02em">c</tspan>
+            <tspan x="31.08" y="0">onsul</tspan>
+            <tspan x="63.38" y="0" letter-spacing="-0.02em">t</tspan>
+            <tspan x="67.81" y="0">ant</tspan>
+          </text>
+        </g>
+        <g id="Group-5" data-name="Group">
+          <g id="Group-6" data-name="Group">
+            <circle id="Oval-4" data-name="Oval" cx="342" cy="117.93" r="1" fill="#e45548" />
+            <line id="Path" x1="342" y1="109.71" x2="342" y2="116.14" fill="none" stroke="#e45548" stroke-linecap="round" stroke-linejoin="round" />
+            <circle id="Oval-5" data-name="Oval" cx="344.86" cy="117.93" r="1" fill="#e45548" />
+            <line id="Path-2" data-name="Path" x1="344.86" y1="109.71" x2="344.86" y2="116.14" fill="none" stroke="#e45548" stroke-linecap="round" stroke-linejoin="round" />
+            <circle id="Oval-6" data-name="Oval" cx="339.14" cy="117.93" r="1" fill="#e45548" />
+            <line id="Path-3" data-name="Path" x1="339.14" y1="109.71" x2="339.14" y2="116.14" fill="none" stroke="#e45548" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+        </g>
+        <rect id="Rectangle-2" data-name="Rectangle" x="9" y="148" width="350" height="1" fill="#e8e8e8" />
+      </g>
+      <g id="task-_-small" data-name="task-/-small">
+        <g id="Group-7-2" data-name="Group">
+          <g id="Oval-7" data-name="Oval">
+            <circle cx="26" cy="313" r="9.5" fill="#fff" stroke="#2b2b2b" />
+          </g>
+        </g>
+        <g id="Task-title-3" data-name="Task-title" style="isolation: isolate">
+          <text transform="translate(47 317)" font-size="14" fill="#333" font-family="SourceSansPro-Regular, Source Sans Pro" style="isolation: isolate">
+            Book visit
+            <tspan x="59.96" y="0" letter-spacing="-0.01em">t</tspan>
+            <tspan x="64.5" y="0">o the denti</tspan>
+            <tspan x="127.52" y="0" letter-spacing="-0.02em">s</tspan>
+            <tspan x="133.11" y="0">t</tspan>
+          </text>
+        </g>
+        <rect id="Rectangle-3" data-name="Rectangle" x="9" y="330" width="350" height="1" fill="#e8e8e8" />
+      </g>
+      <g id="task-_-small-2" data-name="task-/-small">
+        <g id="Group-8" data-name="Group">
+          <g id="Oval-8" data-name="Oval">
+            <circle cx="25" cy="276" r="9.5" fill="#fff" stroke="#2b2b2b" />
+          </g>
+        </g>
+        <g id="Task-title-4" data-name="Task-title" style="isolation: isolate">
+          <text transform="translate(46 280)" font-size="14" fill="#333" font-family="SourceSansPro-Regular, Source Sans Pro" style="isolation: isolate">
+            Send
+            <tspan x="32.65" y="0" letter-spacing="-0.01em">f</tspan>
+            <tspan x="36.6" y="0">eed</tspan>
+            <tspan x="58.25" y="0" letter-spacing="-0.01em">b</tspan>
+            <tspan x="65.8" y="0" letter-spacing="0em">ack </tspan>
+            <tspan x="88.97" y="0" letter-spacing="-0.01em">t</tspan>
+            <tspan x="93.5" y="0">o Lau</tspan>
+            <tspan x="125.37" y="0" letter-spacing="-0.02em">r</tspan>
+            <tspan x="129.89" y="0" letter-spacing="0em">a</tspan>
+          </text>
+        </g>
+        <rect id="Rectangle-4" data-name="Rectangle" x="8" y="293" width="350" height="1" fill="#e8e8e8" />
+      </g>
+      <g id="header">
+        <g id="Group-6-2" data-name="Group-6">
+          <g id="Group-9" data-name="Group">
+            <g id="Oval-9" data-name="Oval">
+              <circle cx="26" cy="65" r="9.5" fill="#fff" stroke="#2b2b2b" />
+            </g>
+          </g>
+          <circle id="Oval-10" data-name="Oval" cx="26" cy="65" r="10" fill="var(--accent-icon)" />
+          <g id="Group-10" data-name="Group">
+            <g id="Path-4" data-name="Path">
+              <path d="M32.12,64.12H26.88V58.88a.88.88,0,1,0-1.76,0v5.24H19.88a.88.88,0,0,0,0,1.76h5.24v5.24a.88.88,0,1,0,1.76,0V65.88h5.24a.88.88,0,0,0,0-1.76Z" fill="#fff" fill-opacity="0.87" fill-rule="evenodd" />
+            </g>
+          </g>
+        </g>
+        <g id="Group-11" data-name="Group">
+          <g id="text-_-color" data-name="text-/-color">
+            <g id="label" style="isolation: isolate">
+              <text transform="translate(45.5 71)" font-size="14" fill="var(--accent-icon)" font-family="SourceSansPro-Semibold, Source Sans Pro" font-weight="600" style="isolation: isolate">
+                New
+                <tspan x="29.57" y="0" letter-spacing="-0.02em">t</tspan>
+                <tspan x="34.36" y="0" letter-spacing="0em">ask</tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+        <g id="Today-_5_" data-name="Today-(5)" style="isolation: isolate">
+          <text transform="translate(142.32 27)" font-size="20" font-family="Helvetica" style="isolation: isolate">
+            <tspan letter-spacing="-0.11em">T</tspan>
+            <tspan x="10" y="0">oday (5)</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group-6-3" data-name="Group-6">
+        <g id="task-_-big-3" data-name="task-/-big">
+          <g id="Group-12" data-name="Group">
+            <g id="Oval-11" data-name="Oval">
+              <circle cx="26" cy="168" r="9.5" fill="#fff" stroke="#2b2b2b" />
+            </g>
+          </g>
+          <g id="Task-title-5" data-name="Task-title" style="isolation: isolate">
+            <text transform="translate(45 172)" font-size="14" fill="#333" font-family="SourceSansPro-Regular, Source Sans Pro" style="isolation: isolate">
+              Send
+              <tspan x="32.65" y="0" letter-spacing="0em">w</tspan>
+              <tspan x="42.64" y="0">eekly upd</tspan>
+              <tspan x="99.52" y="0" letter-spacing="-0.01em">at</tspan>
+              <tspan x="110.92" y="0">e email </tspan>
+              <tspan x="156.08" y="0" letter-spacing="-0.01em">t</tspan>
+              <tspan x="160.62" y="0">o </tspan>
+              <tspan x="171.01" y="0" letter-spacing="-0.01em">te</tspan>
+              <tspan x="182.29" y="0">am</tspan>
+            </text>
+          </g>
+          <g id="circleFill-2" data-name="circleFill">
+            <circle id="Oval-12" data-name="Oval" cx="342" cy="168" r="5" fill="#e45548" />
+          </g>
+          <rect id="Rectangle-5" data-name="Rectangle" x="9" y="202" width="350" height="1" fill="#e8e8e8" />
+        </g>
+        <g id="Group-13" data-name="Group">
+          <g id="label-_-notes-2" data-name="label-/-notes">
+            <g id="note-2" data-name="note" style="isolation: isolate">
+              <text transform="translate(45 190)" font-size="12" fill="#919191" font-family="SourceSansPro-Regular, Source Sans Pro" style="isolation: isolate">
+                Do
+                <tspan x="13.88" y="0" letter-spacing="-0.02em">n</tspan>
+                <tspan x="20.21" y="0">’t </tspan>
+                <tspan x="29.65" y="0" letter-spacing="-0.01em">f</tspan>
+                <tspan x="33.04" y="0">o</tspan>
+                <tspan x="39.54" y="0" letter-spacing="-0.01em">r</tspan>
+                <tspan x="43.58" y="0" letter-spacing="-0.01em">g</tspan>
+                <tspan x="49.46" y="0" letter-spacing="-0.01em">e</tspan>
+                <tspan x="55.3" y="0">t </tspan>
+                <tspan x="61.75" y="0" letter-spacing="-0.01em">a</tspan>
+                <tspan x="67.63" y="0" letter-spacing="-0.02em">t</tspan>
+                <tspan x="71.45" y="0" letter-spacing="-0.02em">t</tspan>
+                <tspan x="75.25" y="0" letter-spacing="0em">achmen</tspan>
+                <tspan x="115.76" y="0" letter-spacing="-0.01em">t</tspan>
+                <tspan x="119.7" y="0">s</tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+        <g id="Group-14" data-name="Group">
+          <rect id="Rectangle-6" data-name="Rectangle" x="331" y="178" width="16" height="16" rx="4" fill="#f5f5f5" />
+          <g id="Path-5" data-name="Path">
+            <g>
+              <path d="M332.81,185.56a.46.46,0,0,1-.47.44.45.45,0,0,1-.46-.44,6.89,6.89,0,0,1,13-2.82.43.43,0,0,1-.21.59.47.47,0,0,1-.62-.2,6,6,0,0,0-11.25,2.43Z" fill-opacity="0.87" />
+              <path d="M344,182.5v-3.06a.47.47,0,0,1,.93,0v3.5a.45.45,0,0,1-.46.44h-3.74a.44.44,0,1,1,0-.88Z" fill-opacity="0.87" />
+              <path d="M344.94,186.44a.47.47,0,0,1,.94,0,6.9,6.9,0,0,1-13,2.82.43.43,0,0,1,.21-.59.47.47,0,0,1,.62.2,6,6,0,0,0,11.25-2.43Z" fill-opacity="0.87" />
+              <path d="M333.74,189.5v3.06a.47.47,0,0,1-.93,0v-3.5a.45.45,0,0,1,.46-.44H337a.44.44,0,1,1,0,.88Z" fill-opacity="0.87" />
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="label-_-datetime" data-name="label-/-datetime">
+        <rect id="Rectangle-7" data-name="Rectangle" x="241" y="126" width="106" height="16" rx="2" fill="#f5f5f5" />
+        <g id="March-09_-2020---09:" data-name="March-09,-2020---09:" style="isolation: isolate">
+          <text transform="translate(246.55 138)" font-size="12" fill="#2b2b2b" font-family="SourceSansPro-Regular, Source Sans Pro" style="isolation: isolate">09 Mar 2022 - 09:41</text>
+        </g>
+      </g>
+      <g id="label-_-datetime-2" data-name="label-/-datetime">
+        <rect id="Rectangle-8" data-name="Rectangle" x="223" y="178" width="106" height="16" rx="2" fill="#f5f5f5" />
+        <g id="March-09_-2020---09:-2" data-name="March-09,-2020---09:" style="isolation: isolate">
+          <text transform="translate(228.55 190)" font-size="12" fill="#2b2b2b" font-family="SourceSansPro-Regular, Source Sans Pro" style="isolation: isolate">09 Mar 2022 - 17:00</text>
+        </g>
+      </g>
+      <rect id="Rectangle-9" data-name="Rectangle" width="368" height="331" fill="url(#Sfumatura_senza_nome)" />
+    </g>
+  </g>
+</svg>

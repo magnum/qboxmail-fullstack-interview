@@ -1,0 +1,13 @@
+Hello {{NOME_WHMCS}},
+the user {{EMAIL_UTENTE}} with the Basic plan has shown interest in the additional Qboxmail services of the upper plans and is waiting to be contacted.
+This represents an opportunity to increase your profit margin.
+If you are not yet familiar with the features of the Professional and Enterprise plans, at this link you can download informative materials.
+
+https://www.qboxmail.com/download/kit_professional_plan.zip
+
+Here you can view the prices per mailbox that will be applied to the user.
+
+https://panel.qboxmail.com/prices
+
+
+Qboxmail Team

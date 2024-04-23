@@ -1,0 +1,107 @@
+@import "_icons";
+
+// General override
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  position: absolute; //fixed;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  background: white;
+  //font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--text);
+  font-weight: var(--regular);
+  margin: 0;
+  background: var(--bg);
+  overscroll-behavior: contain;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100vh;
+}
+
+.message-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  border-bottom: 2px solid var(--bg-d5);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+a {
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+pre {
+  white-space: pre-line;
+  font-size: 12px;
+}
+
+// Scrollbar override on Safari / Chrome
+::-webkit-scrollbar {
+  width: 0.625rem;
+  height: 0.625rem;
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:horizontal {
+  // border-radius: 4px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: none;
+}
+
+* {
+  scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+// Fix contenteditable bug on safari
+// https://stackoverflow.com/questions/20435166/contenteditable-not-working-in-safari-but-works-in-chrome
+[contenteditable] {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+
+// Hide input number arrows on firefox
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

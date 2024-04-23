@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <g class="nc-icon-wrapper" stroke-width="1" fill="var(--accent-icon)" stroke="var(--accent-icon)">
+    <path d="M15.5,7A6.764,6.764,0,0,0,8.5.5,6.764,6.764,0,0,0,1.5,7a6.764,6.764,0,0,0,7,6.5,7.554,7.554,0,0,0,1.43-.137L13.5,15.5v-4A6.57,6.57,0,0,0,15.5,7Z" fill="none" stroke="var(--accent-icon)" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="8.5" y1="3.5" x2="8.5" y2="7.5" fill="none" stroke-linecap="round" stroke-linejoin="round" data-color="color-2"/>
+    <path d="M8.5,9a1,1,0,1,0,1,1A1,1,0,0,0,8.5,9Z" data-cap="butt" data-color="color-2" data-stroke="none" stroke="none"/>
+  </g>
+</svg>

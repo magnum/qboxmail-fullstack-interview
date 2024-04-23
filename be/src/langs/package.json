@@ -1,0 +1,21 @@
+{
+  "name": "qboxmail_webmail_languages",
+  "version": "1.0.0",
+  "description": "This repository contains all translations of the Qboxmail webmail. If some label is not correct in your language, please fork the repo and submit a pull request. If your language is not still present, you can contribute pushing a new file using **en.js** as master, and if you want, you can ask to be the maintainer of that language.",
+  "main": "check.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/qboxmail-public/webmail-languages.git"
+  },
+  "keywords": [],
+  "author": "Qboxmail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/qboxmail-public/webmail-languages/issues"
+  },
+  "homepage": "https://gitlab.com/qboxmail-public/webmail-languages#readme",
+  "type": "module"
+}

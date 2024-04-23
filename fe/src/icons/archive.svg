@@ -1,0 +1,7 @@
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <rect stroke="var(--color-icon)" x="0.499999953" y="1.49999996" width="15.0000001" height="3.00000002"></rect>
+        <polyline stroke="var(--color-icon)" points="13.5 6.49999999 13.5 14.5 2.49999997 14.5 2.49999997 6.49999999"></polyline>
+        <rect stroke="var(--color-icon)" x="5.49999998" y="7.5" width="5.00000003" height="3.00000002"></rect>
+    </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <g>
+    <line id="Path" x1="1.86" y1="13.36" x2="6.34" y2="8.63" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline id="Path-2" data-name="Path" points="8.31 1.54 3.23 4.07 1.86 13.36 10.73 11.93 13.14 6.6" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse id="Oval" cx="7.32" cy="7.64" rx="1.36" ry="1.43" fill="none" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"/>
+    <line id="Path-3" data-name="Path" x1="0.5" y1="15.5" x2="15.5" y2="15.5" fill="none" stroke="#212121" stroke-linecap="round"/>
+    <line id="Path-4" data-name="Path" x1="7.32" y1="0.5" x2="14.14" y2="7.64" fill="none" stroke="#212121" stroke-linecap="round"/>
+  </g>
+</svg>
