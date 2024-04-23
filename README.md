@@ -13,6 +13,10 @@ In fase di colloquio verrà chiesto di illustrare la soluzione applicata e di di
 In questo test è fornita una piccola riproduzione di una webmail.
 Una volta avviato il progetto noterete che si tratta di una webmail poco utile: mostra una lista di messaggi e consente di leggerli.
 
+Questa piccola webmail demo, si collega a una reale casella email nei nostri sistemi e le email che troverai nella lista sono due messaggi che sono stati inviati a questa casella.
+
+## Info sull'architettura e le tecnologie usate
+
 L'architettura dell'app è altrettanto minimale, ma si basa sulla struttura della nostra webmail di produzione, quindi troverete qualche funzione e codice che ha un reale utilizzo nella demo.
 Questo è un aspetto voluto in quanto è importante per noi che la figura che cerchiamo non sia troppo intimorita nel sporcarsi le mani in un codice che non comprende all 100%.
 
@@ -63,7 +67,8 @@ docker-compose -f docker-compose-development.yml up
 
 ```
 cd fe
-npm install # installa le dipendenze
+# installa le dipendenze
+npm install
 # questo avvia il server webpack che serve il frontend
 NODE_ENV=development TARGET_ENV=development npx webpack-dev-server --progress --colors --watch --config ./config/webpack.config.dev.js
 ```
