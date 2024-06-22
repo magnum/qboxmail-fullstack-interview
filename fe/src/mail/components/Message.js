@@ -5,6 +5,10 @@ import {view} from "@risingstack/react-easy-state/dist/es.es5.js";
 class Message extends Component {
   render() {
     const currentMessage = this.props.currentMessage;
+    // remove script tags and css tags
+    const purgedHtml = currentMessage.html
+      .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "")
+      .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, "");
 
     return (
       <div className={s.container}>
@@ -16,7 +20,7 @@ class Message extends Component {
             <div className={s.from}>From : {currentMessage.from.text}</div>
           </div>
 
-          <div className={s.body} dangerouslySetInnerHTML={{__html: currentMessage.html}} />
+          <div className={s.body} dangerouslySetInnerHTML={{__html: purgedHtml}} />
         </div>
       </div>
     );
